@@ -3,15 +3,15 @@ import threading
 import praw
 
 BOT_USERNAME = "x"
+reddit = praw.Reddit(
+    client_id="x",
+    client_secret="x",
+    password="x",
+    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36",
+    username="x",
+)
 
 def main():
-    reddit = praw.Reddit(
-        client_id="x",
-        client_secret="x",
-        password="x",
-        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36",
-        username="x",
-    )
     SUBREDDIT = input("What subreddit would you like to listen in?:: ")
     REGEX = input("Input Regex to reply to: ") 
     reply = input("Input reply text: ")
